@@ -8,5 +8,9 @@
 </head>
 <body>
     <a href="../Controllers/dashboardController.php">Dashboard</a>
+    <a href="../Controllers/inventoryController.php">Inventory</a>
+    <a href="../Controllers/reportsController.php">Reports</a>
+    <a href="../Controllers/supplierController.php">Supplier</a>
+    <a href="../Controllers/transactionController.php">Transaction</a>
 </body>
 </html>
