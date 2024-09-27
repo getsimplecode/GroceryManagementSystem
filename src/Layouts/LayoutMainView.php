@@ -13,17 +13,24 @@
 <div class="sidenav" id="mySidenav">
     <div class="menu-icon" onclick="toggleNav()"><img src="../../res/images/menus.png" width="20px" height="20px"></div>
         <div class="logo"><img src="../../res/images/loh.png" alt="" width="150px" height="150px"></div>
-            <a href="?page=dashboard"><i class="fas fa-home"></i>Dashboard</a>
-            <a href="?page=inventory"><i class="fas fa-box"></i> Product</a>
-            <a href="?page=reports"><i class="fas fa-chart-line"></i> Reports</a>
-            <a href="?page=supplier"><i class="fas fa-truck"></i> Supplier</a>
-            <a href="?page=transaction"><i class="fas fa-exchange-alt"></i> Transaction</a>
+            <a href="../Controllers/dashboardController.php?page=dashboard"><i class="fas fa-home"></i>Dashboard</a>
+            <a href="../Controllers/ProductController.php?page=inventory"><i class="fas fa-box"></i> Product</a>
+            <a href="../Controllers/reportsController.php?page=reports"><i class="fas fa-chart-line"></i> Reports</a>
+            <a href="../Controllers/supplierController.php?page=supplier"><i class="fas fa-truck"></i> Supplier</a>
+            <a href="../Controllers/transactionController.php?page=transaction"><i class="fas fa-exchange-alt"></i> Transaction</a>
 </div>
     <div class="main" id="mainContent">
         <?php
-            include_once '../Controllers/LayoutController.php';
-            $layoutcontrols = new LayoutController();
-            $layoutcontrols->SelectView();
+           if(isset($_GET['page'])){
+            require_once '../Controllers/layoutController.php';
+            $laycontrols = new LayoutController();
+            $laycontrols->SelectView();
+           }
+           if(isset($_GET['edit'])){
+            require_once '../Controllers/ProductController.php';
+            $productControls = new ProductController();
+            $productControls->ReturnView();
+           }
         ?>
     </div>
 

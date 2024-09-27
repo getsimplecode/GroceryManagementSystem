@@ -36,7 +36,7 @@
 
     background-color: #e6e1e1;
     width: 100%;
-    height: 90vh;
+    height: 88vh;
     box-shadow: 0 0 3px 2px rgba(117, 113, 113);
 }
 .topnav{
@@ -148,8 +148,14 @@ button {
 /* END OF SEARCH BOX DESIGN */
 
 /* NEXT AND PREV DESIGN */
-.buttonsprevnext{
-    margin: auto;
+.buttonsprevnext button{
+  margin-top: 7px;
+  background-color: #ff13ff; /* Green */
+  color: white;
+}
+
+.buttonsprevnext button:hover{
+  background-color: #6c0055;
 }
 
 /* END OF NEXT AND PREV DESIGN */
