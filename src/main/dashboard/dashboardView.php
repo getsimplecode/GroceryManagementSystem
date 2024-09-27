@@ -1,46 +1,6 @@
 <title>Dashboard</title>
-    <style>
-        .dashboard {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-        }
-        .box {
-            flex: 1 1 calc(33.333% - 40px);
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-        }
-        .box .icon {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-        .box .amount {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .box .label {
-            font-size: 16px;
-            color: whitesmoke;
-            text-shadow: #dee2e6;
-        }
-        @media (max-width: 768px) {
-            .box {
-                flex: 1 1 calc(50% - 40px);
-            }
-        }
-        @media (max-width: 576px) {
-            .box {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
-</head>
+<link rel="stylesheet" href="../../res/Style/dashboardstyle.css">
 <body>
-
 <div class="container">
     <div class="dashboard">
         <div class="box" style="background-color: #8261DA">

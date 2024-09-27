@@ -3,7 +3,7 @@ include_once '../Layouts/LayoutMainView.php';
 
 class LayoutController{
 
-    function SelectView(){
+   public function SelectView(){
         if(isset($_GET['page'])){
             $page = $_GET['page'];
             switch($page){
@@ -28,7 +28,6 @@ class LayoutController{
         }
     }
 }
- $controls = new LayoutController();
 
 
 ?>

@@ -1,0 +1,155 @@
+
+    .Addbtn button {
+    background-color: #f90099;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+}
+
+.Addbtn button:hover {
+  background-color: rgb(149, 5, 79);
+}
+
+.Addbtn button:active {
+  background-color: #ff00a6;
+}
+
+.Addbtn button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.Addbtn button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.5);
+}
+.mainboard{
+
+    background-color: #e6e1e1;
+    width: 100%;
+    height: 90vh;
+    box-shadow: 0 0 3px 2px rgba(117, 113, 113);
+}
+.topnav{
+    background-color: #2C1894;
+    box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.5);
+}
+
+/* TABLE DESIGN */
+table {
+    margin: 1%,1%,1%,1%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1500ff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Basic button styling */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Edit button styling */
+  #editbtn {
+    background-color: #00ff04; /* Green */
+    color: white;
+  }
+  
+  #editbtn:hover {
+    background-color: #45a049;
+  }
+  
+  #editbtn:active {
+    background-color: #3e8e41;
+  }
+  
+  /* Delete button styling */
+  #deletebtn {
+    background-color: #f90099; /* Red */
+    color: white;
+  }
+  
+  #deletebtn:hover {
+    background-color: #e53935;
+  }
+  
+  #deletebtn:active {
+    background-color: #d32f2f;
+  }
+  
+/* END OF TABLE DESIGN */
+
+/*SEARCH BOX DESIGN */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    float: right;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-container button {
+    background-color: #f90099;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button i {
+    font-size: 16px;
+}
+/* END OF SEARCH BOX DESIGN */
+
+/* NEXT AND PREV DESIGN */
+.buttonsprevnext{
+    margin: auto;
+}
+
+/* END OF NEXT AND PREV DESIGN */

@@ -1,0 +1,45 @@
+
+        .container{
+            margin: auto;
+            width: 100%;
+            height: 94vh;
+            background-color: whitesmoke;
+            box-shadow: 0 0 3px 2px rgba(117, 113, 113);
+        }
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            flex: 1 1 calc(33.333% - 40px);
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .box .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .box .amount {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .box .label {
+            font-size: 16px;
+            color: whitesmoke;
+            text-shadow: #dee2e6;
+        }
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 576px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }

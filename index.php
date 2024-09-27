@@ -1,3 +1,3 @@
 <?php 
-header('Location:src/Layouts/LayoutMainView.php') 
+header('Location:src/Controllers/layoutController.php') 
 ?>
