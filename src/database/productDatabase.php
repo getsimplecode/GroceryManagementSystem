@@ -3,32 +3,28 @@ include_once 'connection.php';
 
 class ProductsDatabase extends Connection{
 
-    public function CreateProduct($label,$price,$category,$brand,$barcodeimage,$unitmeasurement,$description){
-        $query = "INSERT INTO Products(label,price,category,brand,barcodeimage,unitmeasurement,description)
-                  VALUES(:label,:price,:category,:brand,:barcodeimage,:unitmeasurement,:description)";
+    public function CreateProduct($label,$price,$category,$brand,$unitmeasurement,$description){
+        $query = "INSERT INTO products(label,price,category,brand,unitmeasurement,description)
+                  VALUES(:label,:price,:category,:brand,:unitmeasurement,:description)";
         $stmt = $this->pdo->prepare($query);
-        try{
+
             $stmt->execute(
                             [
                                 'label' => $label,
                                 'price' => $price,
                                 'category' => $category,
                                 'brand' => $brand,
-                                'barcodeimage' => $barcodeimage,
+
                                 'unitmeasurement' => $unitmeasurement,
                                 'description' => $description
                             ]
                           );
     
-        }catch(Exception $e){
-            error_log("Error: " . $e->getMessage());
-            return false;
-        }
     }
 
-    public function UpdateProduct($id,$label,$price,$category,$brand,$barcodeimage,$unitmeasurement,$description){
+    public function UpdateProduct($id,$label,$price,$category,$brand,$unitmeasurement,$description){
         $query = "UPDATE Products set label = :label, price = :price, category = :category, brand = :brand,
-                 barcodeimage = :barcodeimage, unitmeasurement = :unitmeasurement, description = :description
+                 unitmeasurement = :unitmeasurement, description = :description
                  WHERE productid = :id";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute(
@@ -38,7 +34,6 @@ class ProductsDatabase extends Connection{
                 'price' => $price,
                 'category' => $category,
                 'brand' => $brand,
-                'barcodeimage' => $barcodeimage,
                 'unitmeasurement' => $unitmeasurement,
                 'description' => $description
             ]
@@ -46,7 +41,7 @@ class ProductsDatabase extends Connection{
     }
 
     public function ShowAllProducts(){
-        $query = "SELECT * FROM Products LIMIT 0,9";
+        $query = "SELECT * FROM Products ORDER BY productid DESC LIMIT 9;";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);

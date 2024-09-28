@@ -1,3 +1,4 @@
 <?php 
-header('Location:src/Controllers/layoutController.php') 
+header('Location: src/Controllers/ProductController.php?page=dashboard');
+
 ?>

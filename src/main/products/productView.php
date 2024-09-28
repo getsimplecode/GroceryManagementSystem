@@ -3,7 +3,7 @@
 <div class="mainboard">
     <nav class="topnav">
       <div class="Addbtn">
-          <button onclick="Location.href"><i class="fas fa-plus"></i> Product</button>
+          <button onclick="location.href='?add' "><i class="fas fa-plus"></i> Product</button>
             <div class="search-container">
               <input type="text" placeholder="Search...">
               <button type="submit"><i class="fa fa-search"></i></button>
