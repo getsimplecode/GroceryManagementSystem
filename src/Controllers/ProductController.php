@@ -5,8 +5,6 @@ $products = new ProductController();
 
 class ProductController{ 
 
-    private $product;
-    
     public function ReturnView(){
         $product = new ProductsDatabase();
         return include_once '../main/products/productView.php';
@@ -45,8 +43,10 @@ class ProductController{
                     unitmeasurement: $unitmeasurement,
                     description: $description
                 );
+                include_once '../main/products/productView.php';
             }
     }
+
     public function AddForm(){
         if(isset($_GET['add'])){
             include_once '../main/products/AddProductView.php';
@@ -68,8 +68,27 @@ class ProductController{
                 unitmeasurement: $punitmeasurement,
                 description: $pdescription
             );
-   
+            include_once '../main/products/productView.php';
         } 
+    }
+
+    public function DeleteProduct(){
+        $product = new ProductsDatabase();
+        if(isset($_GET['delete'])){
+            $id = $_GET['delete'];
+            $product->Destroy($id);
+            include_once '../main/products/productView.php';
+        }
+
+    }
+
+    public function Pagination(){
+        $product = new ProductsDatabase();
+        if(isset($_GET['next'])){
+           $next = $_GET['next'];
+           $product->minimum = $next * $product->maximum;
+           include_once '../main/products/productView.php';
+        }
     }
     
 }

@@ -38,5 +38,6 @@ class LayoutController{
     }
 }
 
+include_once '../Controllers/ProductController.php';
 include_once '../Layouts/LayoutMainView.php';
 ?>

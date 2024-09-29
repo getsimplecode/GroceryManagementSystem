@@ -1,6 +1,6 @@
 
     .Addbtn button {
-    background-color: #f90099;
+    background-color: #364ff6;
     border: none;
     color: white;
     padding: 10px 32px;
@@ -16,11 +16,11 @@
 }
 
 .Addbtn button:hover {
-  background-color: rgb(149, 5, 79);
+  background-color: rgb(5, 17, 149);
 }
 
 .Addbtn button:active {
-  background-color: #ff00a6;
+  background-color: rgb(60, 49, 222);
 }
 
 .Addbtn button:disabled {
@@ -54,7 +54,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -83,7 +83,7 @@ button {
   
   /* Edit button styling */
   #editbtn {
-    background-color: #00ff04; /* Green */
+    background-color: #7aff7d; /* Green */
     color: white;
   }
   
@@ -97,12 +97,12 @@ button {
   
   /* Delete button styling */
   #deletebtn {
-    background-color: #f90099; /* Red */
+    background-color: #ff5064; /* Red */
     color: white;
   }
   
   #deletebtn:hover {
-    background-color: #e53935;
+    background-color: #5d0200;
   }
   
   #deletebtn:active {
@@ -150,12 +150,14 @@ button {
 /* NEXT AND PREV DESIGN */
 .buttonsprevnext button{
   margin-top: 7px;
-  background-color: #ff13ff; /* Green */
+  background-color: #929191; /* Green */
   color: white;
+  width: 80px;
 }
 
 .buttonsprevnext button:hover{
-  background-color: #6c0055;
+  background-color: #272727;
 }
+
 
 /* END OF NEXT AND PREV DESIGN */

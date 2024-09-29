@@ -57,3 +57,7 @@ body {
     text-align: center;
     margin: auto;
 }
+.logout a{
+    margin-top: 70px; /* Push the logout link to the bottom */
+    padding-bottom: 20px; /* Add some space at the bottom */
+}

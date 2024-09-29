@@ -15,7 +15,7 @@
             height: 100vh;
         }
         .form-container {
-            background-color: #2C1894;
+            background-color:  #4483eb;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

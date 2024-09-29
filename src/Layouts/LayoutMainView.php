@@ -18,12 +18,15 @@
             <a href="../Controllers/reportsController.php?page=reports"><i class="fas fa-chart-line"></i> Reports</a>
             <a href="../Controllers/supplierController.php?page=supplier"><i class="fas fa-truck"></i> Supplier</a>
             <a href="../Controllers/transactionController.php?page=transaction"><i class="fas fa-exchange-alt"></i> Transaction</a>
+            <div class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
 </div>
     <div class="main" id="mainContent">
         <?php 
         $lay->SelectView();
         $products->UpdateViewProduct();
         $products->AddForm();
+        $products->DeleteProduct();
+        $products->Pagination();
         ?>
     </div>
 
