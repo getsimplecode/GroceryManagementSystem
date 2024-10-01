@@ -12,20 +12,20 @@
         border-radius: 20px;
         box-shadow: 0 4px 8px black,
                     0 6px 20px rgba(0, 0, 0, 0.19);
-        opacity: 0; /* Initially hidden */
-        transform: translate(-50%, -50%) scale(0.8); /* Start with a smaller scale */
-        animation: slowMoEffect 0.9s ease-out forwards; /* Slowmo effect */
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+        animation: slowMoEffect 0.9s ease-out forwards;
     }
 
     /* Slowmo animation */
     @keyframes slowMoEffect {
         0% {
             opacity: 0;
-            transform: translate(-50%, -50%) scale(0.8); /* Start small */
+            transform: translate(-50%, -50%) scale(0.8);
         }
         100% {
             opacity: 1;
-            transform: translate(-50%, -50%) scale(1); /* End at normal size */
+            transform: translate(-50%, -50%) scale(1);
         }
     }
     .form-group{
@@ -59,8 +59,8 @@
         display: flex;
         align-items: center;
         border-radius: 10px;
-        border: 1px solid #ccc; /* Optional: Add a border */
-        width: 250px; /* Optional: Set a width */
+        border: 1px solid #ccc; 
+        width: 250px; 
     }
     .logo{
         display: flex;
@@ -105,18 +105,18 @@
         text-decoration: underline;
     }
 </style>
-
+<title>JennieStore</title>
 <body>
     <div class="container">
         <div class="form-group">
             <h1>Sign-Up</h1>
-            <form action="../Controllers/UserController.php?page=register" method="post">
+            <form action="../Logins/loginController.php" method="post">
                 <div class="inputbox"><input type="text" name="fullname" placeholder="Full Name" required></div>
                 <div class="inputbox"><input type="email" name="email" placeholder="Email" required></div>
                 <div class="inputbox"><input type="text" name="username" placeholder="Username" required></div>
                 <div class="inputbox"><input type="password" name="password" placeholder="Password" required></div>
                 <div class="inputbox"><input type="password" name="confirmpassword" placeholder="Confirm Password" required></div>
-                <button class="signup-button" type="submit">Sign Up</button>
+                <input type="submit" class="signup-button" name="signup" value="SignUp">
                 <div class="login"><p>Already have an account? <a href="../Logins/LoginForm.php">Log In</a></p></div>
             </form>
         </div>

@@ -39,7 +39,7 @@
         border-bottom-right-radius: 20px;
     }
     .form-group h1{
-        color: white;
+        color: blue;
         font-family: "Anton", sans-serif;
         font-size: 70px;
         font-weight: 400;
@@ -83,6 +83,7 @@
         border-bottom-left-radius: 20px;
     }
     .logo img {
+        margin-top: 80px;
         margin-right: 0;
     }
     .login-button {
@@ -115,20 +116,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<title>JennieStore</title>
+
 <body>
     <div class="container">
         <div class="form-group">
             <h1>LogIn</h1>
-            <form action="../Controllers/ProductController.php?page=dashboard" method="post">
+            <form action="../Logins/loginController.php" method="post">
                 <div class="inputbox"><input type="text" name="username" placeholder="username" required></div>
                 <div class="inputbox"><input type="password" name="password" placeholder="password" required></div>
                 <div class="forgotpassword"><a href="">Forgot Password</a></div>
-                <button class="login-button" onclick="location.href='?login' " >login</button>
+                <input type="submit" class="login-button" name="login" value="login">
                 <div class="register"><p>Dont have an account?<a href="../Logins/SignupForm.php">Sign-Up</a></p></div>
             </form>
         </div>
         <div class="logo">
-            <img src="../../res/images/loh.png" width="350px" height="350px">
+            <img src="../../res/images/loh.png" width="300px" height="300px">
         </div>
     </div>
 </body>

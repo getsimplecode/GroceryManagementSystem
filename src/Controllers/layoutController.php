@@ -1,5 +1,7 @@
+<title>JennieStore</title>
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'].'/GroceryManagementSystem/src/database/productDatabase.php';
+session_start();
 $lay = new LayoutController();
 
 
